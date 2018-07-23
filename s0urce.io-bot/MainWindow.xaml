@@ -9,7 +9,8 @@
     <Grid>
         <ComboBox x:Name="ProcessListBox" HorizontalAlignment="Right" VerticalAlignment="Top" Width="600" Height="30" Margin="0,10,10,0" VerticalContentAlignment="Center"/>
         <Button Content="Set Cdm window" HorizontalAlignment="Right" Margin="0,50,10,0" VerticalAlignment="Top" Width="100" Height="35" Click="Button_Click"/>
-        <Image x:Name="SourceImage" HorizontalAlignment="Left" Height="200" Margin="10,0,0,200" VerticalAlignment="Center" Width="500" IsEnabled="False"/>
+        <Button x:Name="TestButton" Content="Test" HorizontalAlignment="Left" Margin="310,172,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="TestButton_Click"/>
+        <TextBlock x:Name="TestLog" HorizontalAlignment="Left" Margin="10,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="272" Width="265"/>
 
     </Grid>
 </Window>

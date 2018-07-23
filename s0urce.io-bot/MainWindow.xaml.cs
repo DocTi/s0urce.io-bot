@@ -44,7 +44,12 @@ namespace s0urce.io_bot
             }
 
             cdmPanel = CdmPanel.AutoInit(selectProcess);
+        }
+
+        private void TestButton_Click(object sender, RoutedEventArgs e)
+        {
             var result = cdmPanel.RecognizeText();
+            TestLog.Text += $"\n{result}";
         }
     }
 }
