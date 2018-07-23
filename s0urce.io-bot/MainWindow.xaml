@@ -1,14 +1,15 @@
-﻿<Window
+﻿<Window x:Class="s0urce.io_bot.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:s0urce.io_bot"
-        xmlns:View="clr-namespace:s0urce.io_bot.Models.View" x:Class="s0urce.io_bot.MainWindow"
         mc:Ignorable="d"
-        Title="s0urce-bot" Height="450" Width="800" ResizeMode="NoResize">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="ProcessBox" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="600" Height="30" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="ProcessListBox" HorizontalAlignment="Right" VerticalAlignment="Top" Width="600" Height="30" Margin="0,10,10,0" VerticalContentAlignment="Center"/>
+        <Button Content="Set Cdm window" HorizontalAlignment="Right" Margin="0,50,10,0" VerticalAlignment="Top" Width="100" Height="35" Click="Button_Click"/>
+        <Image x:Name="SourceImage" HorizontalAlignment="Left" Height="200" Margin="10,0,0,200" VerticalAlignment="Center" Width="500" IsEnabled="False"/>
 
     </Grid>
 </Window>

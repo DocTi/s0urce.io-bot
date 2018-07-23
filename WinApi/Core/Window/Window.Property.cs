@@ -7,7 +7,7 @@ using WinApi.Structs;
 
 namespace WinApi.Core.Window
 {
-    public partial class Window
+    public static partial class Window
     {
         public static Rectangle GetWindowRect(Process process)
         {

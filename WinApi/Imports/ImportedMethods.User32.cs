@@ -4,7 +4,7 @@ using WinApi.Structs;
 
 namespace WinApi.Imports
 {
-    partial class ImportedMethods
+    static partial class ImportedMethods
     {
         [DllImport("user32.dll")]
         internal static extern IntPtr GetWindowRect(IntPtr hWnd, ref RECT rect);
@@ -22,7 +22,7 @@ namespace WinApi.Imports
         [return: MarshalAs(UnmanagedType.Bool)]
         internal static extern bool GetWindowPlacement(IntPtr hWnd, ref WINDOWPLACEMENT lpwndpl);
 
-        [DllImport("dwmapi", PreserveSig = true)]
-        internal static extern int DwmSetWindowAttribute(IntPtr hWnd, int attr, ref int value, int attrLen);
+        [DllImport("user32.dll")]
+        internal static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, int dwExtraInfo);
     }
 }
