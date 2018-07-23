@@ -92,16 +92,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\s0urce.io-bot-core\s0urce.io-bot-core.csproj">
-      <Project>{709d39ec-dae7-45f7-b9d8-f4577700e0db}</Project>
-      <Name>s0urce.io-bot-core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\s0urce.io-bot-core\s0urce.io-bot-core.csproj">
+      <Project>{709d39ec-dae7-45f7-b9d8-f4577700e0db}</Project>
+      <Name>s0urce.io-bot-core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

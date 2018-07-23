@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s0urce.io-bot", "s0urce.io-bot\s0urce.io-bot.csproj", "{9EA5E8A7-BC51-41BD-B949-89B64BA535B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s0urce.io-bot-core", "..\s0urce.io-bot-core\s0urce.io-bot-core.csproj", "{709D39EC-DAE7-45F7-B9D8-F4577700E0DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s0urce.io-bot-core", "s0urce.io-bot-core\s0urce.io-bot-core.csproj", "{709D39EC-DAE7-45F7-B9D8-F4577700E0DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinApi", "WinApi\WinApi.csproj", "{1F3D9FE9-014A-41CD-9A0E-16B119F52080}"
 EndProject
