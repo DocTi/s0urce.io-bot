@@ -35,18 +35,24 @@ namespace s0urce.io_bot
 #endif
         }
 
-        //TODO Rename
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void FindCdmButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!(ProcessListBox.SelectedItem is Process selectProcess))
+            try
             {
-                throw new Exception();
-            }
+                if (!(ProcessListBox.SelectedItem is Process selectProcess))
+                {
+                    throw new Exception("No process selected");
+                }
 
-            cdmPanel = CdmPanel.AutoInit(selectProcess);
+                cdmPanel = CdmPanel.AutoInit(selectProcess);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
         }
 
-        private void TestButton_Click(object sender, RoutedEventArgs e)
+        private void StartRecognitionButton_Click(object sender, RoutedEventArgs e)
         {
             var result = cdmPanel.RecognizeText();
             TestLog.Text += $"\n{result}";

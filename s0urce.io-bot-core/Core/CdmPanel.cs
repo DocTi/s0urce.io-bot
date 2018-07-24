@@ -115,7 +115,7 @@ namespace s0urce.io_bot_core.Core
                 }
             }
 
-            throw new Exception("Not found \"cdm\" panel");
+            throw new Exception("Not found \"Cdm\" panel");
         }
     }
 }
